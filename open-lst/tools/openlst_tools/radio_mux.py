@@ -32,9 +32,9 @@ ESP_START_BYTE_1 = '\x69'
 DEFAULT_RX_SOCKET = 'ipc:///tmp/radiomux_rx'
 DEFAULT_TX_SOCKET = 'ipc:///tmp/radiomux_tx'
 DEFAULT_ECHO_SOCKET = 'ipc:///tmp/radiomux_echo'
-UART1_RX_SOCKET = 'ipc:///tmp/radiomux1_rx'
-UART1_TX_SOCKET = 'ipc:///tmp/radiomux1_tx'
-UART1_ECHO_SOCKET = 'ipc:///tmp/radiomux1_echo'
+UART1_RX_SOCKET = 'ipc:///tmp/radiomux_rx'
+UART1_TX_SOCKET = 'ipc:///tmp/radiomux_tx'
+UART1_ECHO_SOCKET = 'ipc:///tmp/radiomux_echo'
 
 log = logging.getLogger(__name__)
 

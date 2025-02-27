@@ -1,3 +1,4 @@
+
 # OpenLST
 # Copyright (C) 2018 Planet Labs Inc.
 #
@@ -290,10 +291,10 @@ def get_parser():
 def main():
     parser = get_parser()
     args = parser.parse_args()
-    rx_socket = args.rx_socket or "ipc:///tmp/radiomux{}_rx".format(args.uart)
-    tx_socket = args.tx_socket or "ipc:///tmp/radiomux{}_tx".format(args.uart)
+    rx_socket = args.rx_socket or "ipc:///tmp/radiomux_rx"
+    tx_socket = args.tx_socket or "ipc:///tmp/radiomux_tx"
     echo_socket = (
-        args.echo_socket or "ipc:///tmp/radiomux{}_echo".format(args.uart))
+        args.echo_socket or "ipc:///tmp/radiomux_echo")
     del args.rx_socket
     del args.tx_socket
     del args.echo_socket
